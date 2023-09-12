@@ -11,27 +11,43 @@ body{
     display:flex;
     justify-content: center;
     position: relative;
-
+    top: 31px;
+    left: 45px;
+    width: 1373px;
+    height: 424px;
 
 }
 #pic{
-   
-    top: 50px;
-    width: 200px;
-    
+    position: absolute;
+    top: 42px;
+    left: 250px;
+    width: 313px;
+    height: 313px;
     
 }
+#hi{
+    
+    padding-left: 500px;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #303030;
+    opacity: 1;
+}
 #dev{
-    position: absolute;
     color: #1C4B43;
     text-align: end;
     padding: 10px 10px;
+    margin-right: 200px;
     background-color: aqua;
     opacity: 1;
-    left: 7px;
-    bottom: 1px;
-    width: 450px;
-    height: 20px;
+    top: 431px;
+    left: 317px;
+    width: 970px;
+    height: 57px;
+    font: normal normal normal 38px/67px Source Code Pro;
+    letter-spacing: 3.77px;
+    color: #1C4B43;
+    opacity: 1;
     
 }
 
@@ -43,9 +59,12 @@ body{
 
 
 .what{
+    
    background-color: #141414;
-   color: white;
-    background-image: url("images/christopher-gower-m_HRfLhgABo-unsplash@2x.png");
+   color: #FFFFFF;
+   font: normal normal 300 18px/24px Source Sans Pro;
+   letter-spacing: 0px;
+   background-image: url("images/christopher-gower-m_HRfLhgABo-unsplash@2x.png");
 }
 #what1{
     padding-top: 50px;
@@ -69,6 +88,9 @@ body{
     margin-bottom: 40px;
     margin-left: 600px;
 }
+
+
+
 #who{
     
 }
