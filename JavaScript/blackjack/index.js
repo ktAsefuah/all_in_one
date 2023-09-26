@@ -1,20 +1,50 @@
-let firstCard = 10
-let secondCard = 4
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard
+let player ={
+    name : "Kwesi",
+    chips: 200
+}
+let cards = []
+let sum = 0
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
+
+let playerEL = document.getElementById("info")
+playerEL.textContent = player.name + ": $ " + player.chips
+
+function RandomCard(){
+    
+    let Anumber = Math.floor( Math.random()*13) +1
+    if (Anumber > 10){
+        return 10        
+    }else if (Anumber === 1){
+        return 11
+    }else{
+        return Anumber
+    }
+}
+
 function startGame() {
+    isAlive = true
+    let firstCard = RandomCard()
+    let secondCard = RandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
     playGame()
+    
+     
 }
 
 function playGame(){
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1 ]
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i ++){
+        cardsEl.textContent += cards[i] + "- "
+    }
+
+
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
@@ -30,7 +60,11 @@ function playGame(){
 
 
 function newCard() {
-    let card = 6
-    sum += card
-    startGame()
+    if (isAlive === true && hasBlackJack === false){
+        let card = RandomCard()
+        sum += card
+        cards.push(card)
+        playGame()
+    }
+    
 }
