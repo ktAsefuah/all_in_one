@@ -2,22 +2,31 @@ let myLeads = []
 const inputEL = document.getElementById("input-el")
 const ulEL = document.getElementById("ul-el")
 const delAll = document.getElementById("del")
-
+const save = document.getElementById("save-btn")
 const inputBtn = document.getElementById("input-btn")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
 if (leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
-    showLeads()
+    show(myLeads)
 }
 
-function showLeads(){
+save.addEventListener("click", function(){
+
+    chrome.tabs.query({active: true, currentWindow: true}, function(tab){
+    myLeads.push(tab[0].url)
+    localStorage.setItem("myleads", JSON.stringify(myLeads))
+    show(myLeads)
+
+})    })
+
+function show(leads){
     let listItems = ""
-    for (let i = 0; i < myLeads.length; i ++){
+    for (let i = 0; i < leads.length; i ++){
         listItems += `
         <li>
-        <a target='_blank' href='${myLeads[i]}'>
-            ${myLeads[i]}  </a>
+        <a target='_blank' href='${leads[i]}'>
+            ${leads[i]}  </a>
         </li>`
 
 }
@@ -30,8 +39,9 @@ inputBtn.addEventListener("click", function(){
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
    
     console.log( localStorage.getItem("myLeads"))
-    showLeads()
+    show(myLeads)
 })
+
 
 
 
@@ -43,5 +53,5 @@ delAll.addEventListener("click", function(){
     localStorage.clear()
     myLeads = []
     console.log("Button clicked")
-    showLeads()
+    show(myLeads)
 })
