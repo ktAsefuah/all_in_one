@@ -1,3 +1,5 @@
+import react from react
+
 ReactDOM.render(
 <ul>
     <li>Thing 1</li>

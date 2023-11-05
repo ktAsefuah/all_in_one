@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: black; 
+  
+  
+}
+.top{
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  width: 350px;
+}
+.App-logo {
+  height: 60vmin;
+  width: 350px;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+.start  h4{
+  margin-top: -15px;
+ color: rgb(156, 147, 134);
+
+}
+.start h5{
+  margin-top: -15px;
+  color: rgb(122, 99, 66);
+  font-family: Helvetica, Arial, sans-serif;
+ }
+.email{
+  margin-right: 20px;
+  background-color: #b8c1d1;
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+.linked{
+  background-color: #61dafb;;
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+.text{
+ 
+  text-align: left;
+}
+.text p{
+ color: rgb(197, 190, 182);
+
+}
+.end{
+
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: black;
+
+}
