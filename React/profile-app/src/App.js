@@ -7,11 +7,14 @@ import Content from './components/content';
 function App() {
   return (
     <div className="App">
+      <div>
       <div className='top'>
       <Header />
         <Content />
-        <Footer />
+         <Footer />
         </div>
+        </div>
+        
     </div>
   );
 }

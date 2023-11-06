@@ -6,14 +6,14 @@ export default function Content(){
     <section className="text">
         <div>
           <span>About</span>
-          <p>ffjffj gyuftu tfuy guyftyr ufuyfuytiu
+          <p className="info">ffjffj gyuftu tfuy guyftyr ufuyfuytiu
             dyvryrdu tdytdtrdt tyftdutjf 5uyeutyf ytdy
             [FOUNDERS] started [COMPANY] because [EXPLAIN PROBLEM IN YOUR INDUSTRY]. That's why [DESCRIBE JOURNEY TO SOLUTION]. Along the way, [SHARE MILESTONES AND WINS]. We want to be [STATE YOUR MISSION GOING FORWARD]
           </p>
         </div>
         <div>
           <span>Experience</span>
-          <p>ffjffj gyuftu tfuy guyftyr ufuyfuytiu
+          <p className="info">ffjffj gyuftu tfuy guyftyr ufuyfuytiu
             dyvryrdu tdytdtrdt tyftdutjf 5uyeutyf ytdy
             Administrative Assistant, ABC Company, City, State, 2006 to present
 - Use a combination of verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking.

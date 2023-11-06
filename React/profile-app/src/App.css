@@ -1,7 +1,7 @@
 .App {
   display: flex;
   justify-content: center;
-  background-color: black; 
+  background-color: rgb(53, 51, 51); 
   
   
 }
@@ -17,14 +17,24 @@
   pointer-events: none;
   border-radius: 8px;
 }
-
+.icon{
+  height: 19px;
+  width: 17px;
+  margin-right: 15px;
+}
 
 .App-link {
   color: #61dafb;
 }
+.start  h1{
+  font: 2.2rem "Fira Sans", sans-serif;
+
+}
 .start  h4{
   margin-top: -15px;
  color: rgb(156, 147, 134);
+ font: caption;
+ 
 
 }
 .start h5{
@@ -37,25 +47,32 @@
   background-color: #b8c1d1;
   padding: 12px 22px;
   border-radius: 8px;
+  font: small-caps bold 20px/1 sans-serif;
 }
 .linked{
   background-color: #61dafb;;
   padding: 12px 22px;
   border-radius: 8px;
+  font: small-caps bold 20px/1 sans-serif;
 }
 .text{
- 
+ padding-left: 20px;
   text-align: left;
+  font: small-caps bold 24px/1 sans-serif; 
+   margin-top: 15px;
 }
 .text p{
  color: rgb(197, 190, 182);
-
+padding: 0px 20px;
+font: italic 1.2rem "Fira Sans", serif;
 }
 .end{
 
   display: flex;
   justify-content: center;
   list-style-type: none;
-  background-color: black;
+  background-color: rgb(104, 100, 100);
+  height: 25px;
+  padding: 8px 0px;
 
 }
